@@ -93,7 +93,7 @@ git clone <https://github.com/shivp0404/FinanaceManager.git>
 Navigate into the project directory:
 
 ```bash
-cd muneem
+cd FinanceManager
 ```
 
 ## Step 2: Install Dependencies
@@ -109,13 +109,6 @@ If you are installing the dependencies manually, the required packages are:
 ```bash
 npm install @prisma/adapter-pg@^7.10.1 @prisma/client@^7.10.1 bcrypt@^6.0.0 jsonwebtoken@^9.0.3 next@16.4.3 pg@^8.23.1 react@19.3.0 react-dom@19.3.0 recharts@^3.10.1
 ```
-
-Install the Prisma CLI and development dependencies if they are not already included in the project:
-
-```bash
-npm install -D prisma@^7.10.1 tsx typescript
-```
-
 **Note:** If you have cloned the repository and its `package.json` and lockfile contain all required dependencies, `npm install` is sufficient. You do not need to install them again manually.
 
 ## Step 3: Configure Environment Variables
