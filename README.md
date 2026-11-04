@@ -6,6 +6,77 @@
 
 It provides a centralized dashboard to monitor income, expenses, and budgets. With category-wise reports and monthly visual insights, Muneem helps users understand where their money goes and make better financial decisions.
 
+---
+
+# Project Structure
+
+Muneem follows the Next.js App Router architecture with a modular structure for server actions, application routes, components, and services.
+
+```text
+muneem/
+│
+├── actions/
+│   ├── auth.actions.ts
+│   ├── budget.actions.ts
+│   ├── profile.action.ts
+│   ├── reports.actions.ts
+│   └── transaction.actions.ts
+│
+├── app/
+│   ├── _components/
+│   │
+│   ├── (auth)/
+│   │
+│   ├── (dashboard)/
+│   │   ├── budget/
+│   │   ├── dashboard/
+│   │   ├── profile/
+│   │   ├── reports/
+│   │   ├── transaction/
+│   │   └── layout.tsx
+│   │
+│   ├── api/
+│   │   └── auth/
+│   │       └── refresh/
+│   │           └── route.ts
+│   │
+│   ├── services/
+│   │   └── finduser.tsx
+│   │
+│   ├── favicon.ico
+│   └── globals.css
+│
+├── prisma/
+│   ├── migrations/
+│   ├── schema.prisma
+│   ├── seed.ts
+│   └── seed1.ts
+│
+├── public/
+│
+├── generated/
+│   └── prisma/
+│
+├── .env
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── prisma.config.ts
+└── README.md
+```
+
+### Folder Responsibilities
+
+| Folder / File | Responsibility |
+|---|---|
+| `actions/` | Server actions for authentication, budgets, profiles, reports, and transactions. |
+| `app/_components/` | Shared application components. |
+| `app/(auth)/` | Authentication-related pages, including login and registration. |
+| `app/(dashboard)/` | Dashboard application pages and their shared layout. |
+| `app/api/` | API routes, including the authentication refresh endpoint. |
+| `app/services/` | Shared application services and user-related operations. |
+| `prisma/` | Database
+
 ## Features
 
 ### 1. Authentication & Authorization
